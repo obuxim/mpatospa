@@ -19,7 +19,7 @@ function singly(){
         let linkElement = linkElements[i];
         let link = linkElement.getAttribute('href');
         let isNativeLink = true;
-        if(link == '' || link.indexOf('#') == 0 || link.indexOf('http') >= 0){
+        if(link == null || link == '' || link.indexOf('#') == 0 || link.indexOf('http') >= 0){
             isNativeLink = false;
         }
         if(isNativeLink){
